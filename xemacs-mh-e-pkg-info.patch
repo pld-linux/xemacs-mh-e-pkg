@@ -1,6 +1,6 @@
 diff -Nur xemacs-mh-e-pkg-1.11/man/mh-e/mh-e.texi xemacs-mh-e-pkg-1.11.new/man/mh-e/mh-e.texi
 --- xemacs-mh-e-pkg-1.11/man/mh-e/mh-e.texi	Mon Jun 15 07:46:33 1998
-+++ xemacs-mh-e-pkg-1.11.new/man/mh-e/mh-e.texi	Sun Mar 26 14:23:30 2000
++++ xemacs-mh-e-pkg-1.11.new/man/mh-e/mh-e.texi	Wed Mar 29 18:20:43 2000
 @@ -2,7 +2,7 @@
  @c $Id$
  @c Time-stamp: <95/04/14 19:05:01 gildea>
@@ -10,20 +10,20 @@ diff -Nur xemacs-mh-e-pkg-1.11/man/mh-e/mh-e.texi xemacs-mh-e-pkg-1.11.new/man/m
  @settitle mh-e
  @c %**end of header
  
-@@ -13,6 +13,16 @@
- @set VERSION 5.0.2
+@@ -14,9 +14,15 @@
  @set UPDATED 22 August 1995
  @set UPDATE-MONTH August 1995
-+
+ 
 +
 +@ifinfo
 +@format
 +@dircategory XEmacs Editor:
-+@direntry
+ @direntry
+-* Mh-E::                Emacs interface to the MH mail system
 +* Mh-E: (mh-e).                         Emacs interface to the MH mail system
-+@end direntry
+ @end direntry
 +@end format
 +@end ifinfo
  
- @direntry
- * Mh-E::                Emacs interface to the MH mail system
+ @ifinfo
+ This is Edition @value{EDITION}, last updated @value{UPDATED}, of
