@@ -1,29 +1,25 @@
-diff -Nur xemacs-mh-e-pkg-1.11/man/mh-e/mh-e.texi xemacs-mh-e-pkg-1.11.new/man/mh-e/mh-e.texi
---- xemacs-mh-e-pkg-1.11/man/mh-e/mh-e.texi	Mon Jun 15 07:46:33 1998
-+++ xemacs-mh-e-pkg-1.11.new/man/mh-e/mh-e.texi	Wed Mar 29 18:20:43 2000
-@@ -2,7 +2,7 @@
+--- xemacs-mh-e-pkg-1.27/man/mh-e/mh-e.texi.orig	2003-04-30 03:28:04.000000000 +0200
++++ xemacs-mh-e-pkg-1.27/man/mh-e/mh-e.texi	2003-11-26 22:43:01.000000000 +0100
+@@ -1,16 +1,20 @@
+ \input texinfo   @c -*-texinfo-*-
  @c $Id$
- @c Time-stamp: <95/04/14 19:05:01 gildea>
  @c %**start of header
--@setfilename ../info/mh-e.info
-+@setfilename ../../info/mh-e.info
+-@setfilename ../info/mh-e
++@setfilename ../../info/mh-e
  @settitle mh-e
  @c %**end of header
  
-@@ -14,9 +14,15 @@
- @set UPDATED 22 August 1995
- @set UPDATE-MONTH August 1995
+ @setchapternewpage odd
  
-+
-+@ifinfo
+-@dircategory Emacs
++@ifinfo 
 +@format
 +@dircategory XEmacs Editor:
  @direntry
--* Mh-E::                Emacs interface to the MH mail system
-+* Mh-E: (mh-e).                         Emacs interface to the MH mail system
+ * MH-E: (mh-e).		Emacs interface to the MH mail system.
  @end direntry
 +@end format
 +@end ifinfo
  
- @ifinfo
- This is Edition @value{EDITION}, last updated @value{UPDATED}, of
+ @c Version variables.
+ @set EDITION 1.3
