@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Emacs interface to the MH mail system.
 
-%description -l pl 
+%description -l pl
 Fronend dla folderów poczty w formacie MW.
 
 %prep
@@ -37,7 +37,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf lisp/mh-e/ChangeLog 
+gzip -9nf lisp/mh-e/ChangeLog
 
 %clean
 rm -fr $RPM_BUILD_ROOT
@@ -50,7 +50,7 @@ rm -fr $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc lisp/mh-e/ChangeLog.gz 
+%doc lisp/mh-e/ChangeLog.gz
 %{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.elc
