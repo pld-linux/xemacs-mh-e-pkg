@@ -2,7 +2,7 @@ Summary:	Front end support for MH
 Summary(pl):	Fronend dla folderów poczty w formacie MW
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
-Version:	1.14
+Version:	1.16
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
