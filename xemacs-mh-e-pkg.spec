@@ -1,14 +1,15 @@
 Summary:	Front end support for MH
-Summary(pl):	Front end support for MH
+Summary(pl):	Fronend dla folderów poczty w formacie MW
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
 Version:	1.13
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
+Group(de):	Applikationen/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-Patch0:		xemacs-mh-e-pkg-info.patch
+Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildArch:	noarch
 Conflicts:	xemacs-sumo
@@ -21,6 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Emacs interface to the MH mail system.
 
 %description -l pl 
+Fronend dla folderów poczty w formacie MW.
 
 %prep
 %setup -q -c
@@ -37,8 +39,7 @@ cp -a * $RPM_BUILD_ROOT%{_datadir}/xemacs-packages
 mv -f  $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info/*.info* $RPM_BUILD_ROOT%{_infodir}
 rm -fr $RPM_BUILD_ROOT%{_datadir}/xemacs-packages/info
 
-gzip -9nf $RPM_BUILD_ROOT%{_infodir}/*.info* \
-	lisp/mh-e/ChangeLog 
+gzip -9nf lisp/mh-e/ChangeLog 
 
 %clean
 rm -fr $RPM_BUILD_ROOT
