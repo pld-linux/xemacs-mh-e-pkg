@@ -29,7 +29,8 @@ Interfejs do folderów poczty w formacie MH.
 %patch0 -p1
 
 %build
-(cd man/mh-e; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
+cd man/mh-e
+awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo
 
 %install
 rm -rf $RPM_BUILD_ROOT
