@@ -2,7 +2,7 @@ Summary:	Front end support for MH
 Summary(pl):	Front end support for MH
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
-Version:	1.11
+Version:	1.12
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
