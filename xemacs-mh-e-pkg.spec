@@ -1,5 +1,5 @@
 Summary:	Front end support for MH
-Summary(pl):	Fronend dla folderów poczty w formacie MW
+Summary(pl):	Frontend dla folderów poczty w formacie MH
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
 Version:	1.27
@@ -10,18 +10,19 @@ Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	5b886efc6e93f97a61237dade2f360ee
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
-BuildArch:	noarch
-Conflicts:	xemacs-sumo
+BuildRequires:	texinfo
 Requires:	xemacs
-Requires:	xemacs-mail-lib-pkg
 Requires:	xemacs-base-pkg
+Requires:	xemacs-mail-lib-pkg
+Conflicts:	xemacs-sumo
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Emacs interface to the MH mail system.
 
 %description -l pl
-Fronend dla folderów poczty w formacie MW.
+Interfejs do folderów poczty w formacie MH.
 
 %prep
 %setup -q -c
@@ -53,6 +54,6 @@ rm -fr $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc lisp/mh-e/ChangeLog
-%{_infodir}/*
 %dir %{_datadir}/xemacs-packages/lisp/*
 %{_datadir}/xemacs-packages/lisp/*/*.el*
+%{_infodir}/*.info*
