@@ -12,8 +12,10 @@ Name:    	xemacs-mh-e-pkg
 Version: 	1.11
 Release:	1
 
+Patch0: 	xemacs-mh-e-pkg-info.patch
+
 ### Preamble
-Copyright:	GPL
+License:	GPL
 Group:    	Applications/Editors/Emacs
 Group(pl):	Aplikacje/Edytory/Emacs
 URL:      	http://www.xemacs.org
@@ -36,6 +38,10 @@ Prereq:  	/usr/sbin/fix-info-dir
 ### Main
 %prep
 %setup -q -c
+%patch0 -p1
+
+%build
+(cd man/mh-e; awk '/^\\input texinfo/ {print FILENAME}' * | xargs makeinfo)
 
 %install
 rm -rf $RPM_BUILD_ROOT
