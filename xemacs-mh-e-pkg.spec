@@ -1,5 +1,5 @@
 Summary:	Front end support for MH
-Summary(pl):	Frontend dla folderów poczty w formacie MH
+Summary(pl.UTF-8):   Frontend dla folderÃ³w poczty w formacie MH
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
 Version:	1.27
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Emacs interface to the MH mail system.
 
-%description -l pl
-Interfejs do folderów poczty w formacie MH.
+%description -l pl.UTF-8
+Interfejs do folderÃ³w poczty w formacie MH.
 
 %prep
 %setup -q -c
