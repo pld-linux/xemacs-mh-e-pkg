@@ -6,7 +6,7 @@ Version:	1.27
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
-Source0:	ftp://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
+Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
 # Source0-md5:	5b886efc6e93f97a61237dade2f360ee
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
