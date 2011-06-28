@@ -2,12 +2,12 @@ Summary:	Front end support for MH
 Summary(pl.UTF-8):	Frontend dla folderów poczty w formacie MH
 Name:		xemacs-mh-e-pkg
 %define 	srcname	mh-e
-Version:	1.27
+Version:	1.32
 Release:	1
 License:	GPL
 Group:		Applications/Editors/Emacs
 Source0:	http://ftp.xemacs.org/xemacs/packages/%{srcname}-%{version}-pkg.tar.gz
-# Source0-md5:	5b886efc6e93f97a61237dade2f360ee
+# Source0-md5:	88cc1c6aafc7e68c5a5973b4df9cf681
 Patch0:		%{name}-info.patch
 URL:		http://www.xemacs.org/
 BuildRequires:	texinfo
