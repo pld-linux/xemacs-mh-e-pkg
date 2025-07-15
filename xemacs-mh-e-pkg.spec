@@ -26,7 +26,7 @@ Interfejs do folderów poczty w formacie MH.
 
 %prep
 %setup -q -c
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cd man/mh-e
